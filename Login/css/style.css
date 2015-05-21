@@ -59,6 +59,7 @@ h1 {
           transition-timing-function: ease-in-put;
   
 }
+/*
 form {
   padding: 20px 0;
   z-index: 2;
@@ -88,7 +89,7 @@ form input:focus {
   width: 300px;
   color: #53e3a6;
 }
-/*
+
 form button {
   appearance: none;
   outline: 0;

@@ -1,6 +1,6 @@
  $("#fbi").click(function(event){
 		 event.preventDefault();
 	 
-	 $('form').fadeOut(500);
+	 $("#fbi").fadeOut(500);
 	 $('.wrapper').addClass('form-success');
 });
