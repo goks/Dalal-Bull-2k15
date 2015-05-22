@@ -15,7 +15,7 @@
     
   </head>
 
-  <body>
+  <body onload="start()">
 
     <div id="header"> 
 	 <div class="pull-left" >
@@ -30,12 +30,12 @@
 	<div class="container">
 		
 		<img src="images/logo-dalalbull_G.png" border="0">
-		
-			<a href="javascript: void(0);" class="fb" id="fbi"  >
+		 <div onclick="FBlogin()">
+			<a href="" class="fb" id="fbi"  >
  			 <p>Login with Facebook</p>
   				<i class="fa fa-facebook"></i>
 			</a>
-			
+		</div>			
 		
 	</div>
 	
@@ -70,6 +70,8 @@
 
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="js/index.js"></script>
+   <script src="js/facebook.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
     
   </body>
 </html>
