@@ -10,7 +10,10 @@ body {
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
+  padding-top: 85px;
+
+ }
+
 
 
 h1 {
@@ -18,138 +21,132 @@ h1 {
 }
 
 
-.wrapper {
-  /* background: #FCA700;
-  background: -webkit-linear-gradient(top left, #FCA700 0%, #FF8D1C 100%);
-  background: linear-gradient(to bottom right, #FCA700 0%, #FF8D1C 100%); */
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 400px;
-  margin-top: -200px;
-  overflow: hidden;
-}
-.bottom_bar {
-  /*background: #0C1127;  */
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  top: 50%;
- }
+@media only screen and (max-width: 700px) {
+    .col-lg-12 img
+  {
+    width: auto;
+    height:auto;
+    max-width: 90%;
+    max-height:50%;
+    vertical-align: true;   
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    padding-left: 5px;
+    padding-right:5px;
 
-.wrapper.form-success .container img {
-  -webkit-transform: translateY(50px);
-      -ms-transform: translateY(50px);
-          transform: translateY(50px);
+  } 
+ #dbcont{
+  position: absolute;
+  top:50%;
+  width: 100%;
+  margin-top: -35%;
+
+} 
+#vishigh {
+  display: none;
 }
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 50px 0;
-  height: 400px;
-  text-align: center;
 
 }
-.container img {
- 
+  @media only screen and (min-width: 701px) {
+    .col-lg-12 img
+  {
+    width: auto;
+    height:auto;
+    max-width: 50%;
+    max-height:50%;
+    vertical-align: true;   
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    padding-left: 10px;
+    padding-right:10px;
+
+  } 
+
+  #dbcont{
+  position: absolute;
+  top:50%;
+  width: 100%;
+  margin-top: -25%;
+}
+    #vislow{
+      display: none;
+    } 
+}
+#dblogo {
+  
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   -webkit-transition-timing-function: ease-in-put;
           transition-timing-function: ease-in-put;
-  
-}
-/*
-form {
-  padding: 20px 0;
-  z-index: 2;
-}
-form input {
-  appearance: none;
-  outline: 0;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  background-color: rgba(255, 255, 255, 0.2);
-  width: 250px;
-  border-radius: 3px;
-  padding: 10px 15px;
-  margin: 0 auto 10px auto;
-  display: block;
-  text-align: center;
-  font-size: 18px;
-  color: white;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
-  font-weight: 300;
-}
-form input:hover {
-  background-color: rgba(255, 255, 255, 0.4);
-}
-form input:focus {
-  background-color: white;
-  width: 300px;
-  color: #53e3a6;
-}
+        }
 
-form button {
-  appearance: none;
-  outline: 0;
-  background-color: white;
-  border: 0;
-  padding: 10px 15px;
-  color: #53e3a6;
-  border-radius: 3px;
-  width: 250px;
-  cursor: pointer;
-  font-size: 18px;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
-}
-form button:hover {
-  background-color: #f5f7f9;
-}*/
+#dbcolumn {
+  margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    float: none;
 
+
+}
 #header {
-  width: 100%;
-  margin: 0 auto;
-}
-
-
-#header .dimension1 {
-padding-top:3px;
-padding-bottom:3px;
-padding-right:4px;
-  height: 85px;
-  overflow: hidden;
-}
-
-#header .dimension2 {
-padding-top:3px;
-padding-bottom:3px;
-padding-left:7px;
     height: 85px;
-    overflow: hidden;
+}
+
+
+#dbrow.form-success #dbcolumn img {
+  -webkit-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+          transform: translateY(50px);
+
+}
+
+
+
+
+
+.dimension1 , .dimension2 {
+ 
+  margin: 0 auto;
+  padding-top:3px;
+padding-bottom:3px;
+max-width:30%;
+
+}
+
+
+.dimension1 {
+  width:auto;
+  height:auto;
+  float: right;
+  }
+
+.dimension2 {
+  width: auto;
+  height:auto;
+  
+  float: left;
   }
 
 
-#header .pull-right {
-   float: right;
-   overflow: hidden;
-   width: auto;
-   
-   
+#footerbtns {
+  width: 100%;
+  bottom: 0;
+  margin-left: 0%;
+  position: absolute;
 }
 
-#header .pull-left {
-   float: left;
-   overflow: hidden;
-   width: auto; 
- }
 
- .container img {
+.Bubblediv {
+  position: absolute;
+  top: 25%;
+  bottom: 25%;
+  left: 0;
   width: 100%;
-  height:50%;
- }  
- 
+  height: 50%;
+  overflow: hidden;
+}
 
 .bg-bubbles {
   position: absolute;
@@ -158,6 +155,7 @@ padding-left:7px;
   width: 100%;
   height: 100%;
   z-index: 1;
+
 }
 .bg-bubbles li {
   position: absolute;
@@ -266,9 +264,9 @@ padding-left:7px;
 .fb {
   box-sizing: border-box;
   text-decoration: none;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto; 
   padding-right: 0;
-  font-size: 0;
   vertical-align: middle;
   background: #305BA6;
   color: #FBFBFB;
@@ -277,6 +275,9 @@ padding-left:7px;
   overflow: hidden;
   position: relative;
   z-index: 10;
+  text-align: center;
+left: 50%;
+  transform: translate(-50%, 0%);
 
 
   font-family: 'Open Sans', sans-serif;
@@ -284,17 +285,17 @@ padding-left:7px;
   transition: background 0.25s;
 }
 .fb p {
-  font-size: 14px;
+  
   display: inline-block;
   vertical-align: middle;
-  line-height: 40px;
-  padding: 0 20px;
+  line-height: 2em;
+  padding: 0 2em;
   margin: 0;
   font-weight: 600;
   /* text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25); */
 }
 .fb i {
-  font-size: 20px;
+  
   display: inline-block;
   vertical-align: middle;
   line-height: 40px;
@@ -312,3 +313,4 @@ padding-left:7px;
 .fb:hover i {
   background: #103984;
 }
+

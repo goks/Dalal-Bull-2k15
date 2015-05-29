@@ -2,5 +2,10 @@
 		 event.preventDefault();
 	 
 	 $("#fbi").fadeOut(500);
-	 $('.wrapper').addClass('form-success');
+	 $("#dbrow").addClass('form-success');
 });
+
+ 
+ 
+
+
