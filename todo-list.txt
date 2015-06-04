@@ -1,6 +1,0 @@
-#TO-DO LIST
-1.MAKE LOGIN BACKEND
-2.CHANGE COLOR SCHEME
-3.Add something on homepage to show stock market closed or open
-  eg: Nifty is closed now..Comeback Later.
-      This Js script refreshes every10 seconds maybe..
