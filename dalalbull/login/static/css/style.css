@@ -313,4 +313,8 @@ left: 50%;
 .fb:hover i {
   background: #103984;
 }
+#loading {
+display:visible; position:absolute; left:0%; top:0%; z-index:900000; background-color:white;  height:100%; width:100%;}
 
+#loading-image {
+position:relative;display:block;  top:35%; margin-left:auto; margin-right:auto;}

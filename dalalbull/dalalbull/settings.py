@@ -77,19 +77,13 @@ WSGI_APPLICATION = 'dalalbull.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dalalbull',
-        'USER': 'root',
-        'PASSWORD': 'turbodrive111',
-        'HOST': '127.0.0.1',
+        'NAME': 'dbname',
+        'USER': 'dbusername',
+        'PASSWORD': 'dbpassword',
+        'HOST': 'localhost',
     }
 }
 
-"""DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}"""
 
 
 # Internationalization

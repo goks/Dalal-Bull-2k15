@@ -1,6 +1,6 @@
  window.fbAsyncInit = function() {
   FB.init({
-    appId      : '802031603226333',
+    appId      : '811945795568247',
     cookie     : true,  
                         
     xfbml      : true,  
@@ -25,14 +25,14 @@ function login(){
  FB.api('/me',function(response){
  console.log(JSON.stringify(response));
  var csrf=getCookie('csrftoken');
- $.post("../login/login",{
+ $.post("../login",{
 		username:response.id,
 		firstname:response.first_name,
 		lastname:response.last_name,
 		email:response.email,
 		csrfmiddlewaretoken:csrf
 		},function(data,status){if(status==='success')
-                                  window.location="../login/dashboard";					
+                                  window.location="../dashboard";					
 					});
  });
 }
